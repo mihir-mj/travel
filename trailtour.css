@@ -1,0 +1,71 @@
+﻿.navbar-brand img{
+	height:30px;
+	padding-right:300px;
+	}
+	.navbar{
+	padding:10px;
+	}
+	.navbar-nav li{
+	padding-right:15px;
+	font-weight:bold;
+	font-size:16px;
+	}
+	.nav-link .navbar-light .navbar-nav{
+	color:blue;
+	} 
+	.nav-link .navbar-light .navbar-nav:hover{
+	color:pink;
+	}
+
+
+.btn {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+    .btn:hover {
+        background-color: black;
+    }
+.container-fluid {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.text1 {
+    color: white;
+    font-size: 25px;
+    padding: 8px 6px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.pill-nav a {
+    display: inline-block ;
+    color: black;
+    text-align: center ;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+    /* Change the color of links on mouse-over */
+    .pill-nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .pill-nav a.active {
+        background-color: dodgerblue;
+        color: white;
+    }

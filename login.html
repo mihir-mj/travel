@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<title> Login Up </title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="login_style.css">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/jquery-ui.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-------------------------------------Navigation Bar --------------------------------------------->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="images/logo.png"></a>	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-		     controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"> </span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav" ml-auto>
+			<li class="nav-item dropdown active">
+			<a class ="nav-link dropdown-toggle" href="tour_details/tour_detail.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> India </a>
+
+			<div class="dropdown-menu" aria-labelledby="dropdown04">
+			<a class="dropdown-item" href="trailtour.html"> North</a>
+			<a class="dropdown-item" href="trailtour.html"> South</a>
+			<a class="dropdown-item" href="trailtour.html"> East</a>
+			<a class="dropdown-item" href="trailtour.html"> West</a>
+			<a class="dropdown-item" href="trailtour.html"> North-East</a>
+			</div>
+			</li>
+
+			<li class="nav-item dropdown">
+			<a class ="nav-link dropdown-toggle" href="tour_details/tour_detail.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> World </a>
+
+			<div class="dropdown-menu" aria-labelledby="dropdown04">
+			<a class="dropdown-item" href="trailtour.html"> Asia</a>
+			<a class="dropdown-item" href="trailtour.html"> Europe</a>
+			<a class="dropdown-item" href="trailtour.html"> Africa</a>
+			<a class="dropdown-item" href="trailtour.html"> North-America</a>
+			<a class="dropdown-item" href="trailtour.html"> Australia</a>
+			</div>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="all_tours.php"> All Tours </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="blog.html"> Blogs </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html"> Contact Us </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="aboutus.html"> About Us </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="login.html"> Login </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="signup.html"> Sign Up </a>
+			</li>
+
+
+
+		</ul>
+	</div>
+   </div>
+</nav>
+
+<!-------------------------------------Navigation Bar --------------------------------------------->
+
+
+ <div class="view" style="background-image: url('images/city.png'); ">
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-6 col-xl-5 mb-4 ">
+	    <div class="block card wow fadeInRight" data-wow-delay="0.3s">
+		<div class="card-body">
+			<div class="text-center">
+			   	<h3 class="title"> Login </h3>
+                          	<hr class="hr-light">
+                        </div>
+
+		<form class="needs-validation" onsubmit="return validation()" action="login1.php" method="post">
+
+                        <div class="md-form mb-3">
+			    <i class="fas fa-user prefix white-text active"></i>
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first Name" value="" required name="firstname">
+			    <span id="checkname" class="text-danger">  </span>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        
+
+		    <div class="md-form">
+			<i class="fas fa-envelope prefix white-text active"></i>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your Email" required name="email">
+                        <div class="invalid-feedback">
+                            Please enter a valid email.
+                        </div>
+                    </div>
+
+		  </br>
+		
+                        <div class="md-form mb-3">
+			    <i class="fas fa-lock prefix white-text active"></i>
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" value="" required name="password">
+                            <div class="invalid-feedback">
+                                Valid password is required.
+                            </div>
+                        </div>
+                        
+
+		</br>
+		<button class="btn btn-danger btn-lg btn-block" type="submit" >Submit</button>
+
+		</br>
+		 Do not have an account.<a href="signup.html" class="signup"style="color:#ff0055">  Sign Up Now !</a>
+		</form>
+		</div>
+	     </div>
+	</div>
+    </div>
+</div>	
+
+
+
+<script type="text/javascript">
+	
+	function validation(){
+	
+		var user =document.getElementById("firstName").value;
+		if((user.length < 3 || (user.length >15))
+		{
+			doccument.getElementById("firstName").innerHTML()=" **name should be between 2 and 20";
+			return false;
+		}
+}
+
+
+
+</script>	
+
+</body>
+</html>

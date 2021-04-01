@@ -1,0 +1,991 @@
+<!doctype html>
+<html>
+<head>
+	<title> Home Page </title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="homepage_style.css">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/jquery-ui.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+<script>
+window.onload = function(){
+document.querySelector('.cont_modal').className = "cont_modal";    
+}
+var c = 0;
+function open_close(){
+  if(c % 2 == 0){    
+document.querySelector('.cont_modal').className = "cont_modal cont_modal_active";  
+c++;
+  }else {
+document.querySelector('.cont_modal').className = "cont_modal";  
+c++;    
+  }  
+}  
+</script>
+
+</head>
+
+<body>
+
+<!-------------------------------------Navigation Bar --------------------------------------------->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="images/logo.png"></a>	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-		     controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"> </span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav" ml-auto>
+			<li class="nav-item dropdown active">
+			<a class ="nav-link dropdown-toggle" href="tour_details/tour_detail.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> India </a>
+
+			<div class="dropdown-menu" aria-labelledby="dropdown04">
+			<a class="dropdown-item" href="trailtour.html"> North</a>
+			<a class="dropdown-item" href="trailtour.html"> South</a>
+			<a class="dropdown-item" href="trailtour.html"> East</a>
+			<a class="dropdown-item" href="trailtour.html"> West</a>
+			<a class="dropdown-item" href="trailtour.html"> North-East</a>
+			</div>
+			</li>
+
+			<li class="nav-item dropdown">
+			<a class ="nav-link dropdown-toggle" href="tour_details/tour_detail.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> World </a>
+
+			<div class="dropdown-menu" aria-labelledby="dropdown04">
+			<a class="dropdown-item" href="trailtour.html"> Asia</a>
+			<a class="dropdown-item" href="trailtour.html"> Europe</a>
+			<a class="dropdown-item" href="trailtour.html"> Africa</a>
+			<a class="dropdown-item" href="trailtour.html"> North-America</a>
+			<a class="dropdown-item" href="trailtour.html"> Australia</a>
+			</div>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="all_tours.php"> All Tours </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="blog.html"> Blogs </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html"> Contact Us </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="aboutus.html"> About Us </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="login.html"> Login </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="signup.html"> Sign Up </a>
+			</li>
+
+
+
+		</ul>
+	</div>
+   </div>
+</nav>
+
+<!-------------------------------------Navigation Bar --------------------------------------------->
+
+
+<!-------------------------------------Carousel --------------------------------------------->
+
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="slider carousel-inner">
+    <div class="carousel-item active">
+        <a href="blog.html"> <img class="d-block w-100" src="images/paris.jpg"
+          alt="First slide"> </a>
+      <div class="carousel-caption">
+        <h1 class="display-2">Jewels of Europe</h1>
+        <h3>Explore the wonders of majestic Europe with its timeless beauty....!!</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <a href="blog.html"> <img class="d-block w-100" src="images/waterfall.png"
+          alt="Second slide"> </a>
+      <div class="carousel-caption">
+        <h1 class="display-2"> Majestic Kerala</h1>
+        <h3>Visit the quaint and beautiful backwaters and the lush tea gardens...!!</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <a href="blog.html"> <img class="d-block w-100" src="images/rajasthan.jpg"
+          alt="Third slide"> </a>
+      <div class="carousel-caption">
+        <h1 class="display-2">Royal Rajasthan</h3>
+        <h3>Timeless ruins with stories abound and welcoming peolpe await your visit...!!</h3>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+
+<!-------------------------------------- Carousel ----------------------------------------->
+
+
+<!-------------------------------------- Text Jumbo ----------------------------------------->
+
+<div class="jumbotron">
+  <h2 class="display-4">Need Customized Hoidays ?</h2>
+  <p class="lead">Our customized holidays offer the perfect escape to unique destinations around the world along with exclusive experiences, designed as per your choice and planned at your pace!</p>
+  <a class="jumbo btn btn-danger btn-lg" href="aboutus.html" role="button">Learn more</a>
+</div>
+
+<!-------------------------------------- Text Jumbo ----------------------------------------->
+
+	
+<!-------------------------------------- Cards Slider----------------------------------------->
+
+<div class="container-fluid">
+<h1 class="h1-responsive font-weight-bold my-5"style="text-align:center">Special India Tours </h1>
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+                <a class="btn-floating" href="#multi-item-example" data-slide="prev">
+			<i class="fas fa-chevron-circle-left fa-3x"></i>
+		</a>
+                <a class="btn-floating" href="#multi-item-example" data-slide="next">
+                    <i class="fas fa-chevron-circle-right fa-3x"></i>
+                </a>
+            </div>
+            <!--/.Controls-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="trailtour.html"> <img class="card-img-top"
+                                     src="images/taj_mahal.png"
+                                     alt="Card image cap"> </a>
+                                <div class="card-body">
+                                   <!-- Title -->
+				   <div class="container">
+				      <h4 class="card-title" style="float:right"><a>5 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Delhi - Agra</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><i class="fas fa-star-half amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.5 (413)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 30,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Visit one of seven wonders Taj Mahal, massive Agra Fort, historic India Gate and the iconic Red Fort.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="trailtour.html"> <img class="card-img-top"
+                                     src="images/pondicherry.jpg"
+                                     alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				    <div class="container">
+				      <h4 class="card-title" style="float:right"><a>4 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Pondicherry</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><i class="fas fa-star-half amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.3 (402)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 35,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Visit the unique 'Auroville' community at Pondicherry and enjoy a lovely heritage walk in the French Colony.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="blog.html"> <img class="card-img-top"
+                                     src="images/varanasi.jpg"
+                                     alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				    <div class="container">
+				      <h4 class="card-title" style="float:right"><a>4 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Varanasi-Allhabad</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.0 (395)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 25,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Experience spiritual 'Ganga Aarti' at Banaras Ghat and visit the 'Allahabad Fort',the Kashi Vishwanath.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="trailtour.html"> <img class="card-img-top"
+                                     src="images/amritsar.png" alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				     <div class="container">
+				      <h4 class="card-title" style="float:right"><a>5 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Amritsar-Chandigarh</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><i class="fas fa-star-half amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.55 (423)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 32,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Visit the sacred Golden Temple, historic Jaillanwala Baugh and the city of Chanigarh.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="blog.html"> <img class="card-img-top"
+                                     src="images/munnar.png" alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				    <div class="container">
+				      <h4 class="card-title" style="float:right"><a>5 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Mysore-Ooty</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.2 (403)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 28,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Visit the royal Mysore Palace and experience the queen of blue hills (Nilgiris).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="trailtour.html"> <img class="card-img-top"
+                                     src="images/jabalpur.jpg" alt="Card image cap"> </a>
+                                <div class="card-body">
+                                   <!-- Title -->
+    				    <div class="container">
+				      <h4 class="card-title" style="float:right"><a>5 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Jabalpur-Kanha</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.1 (400)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 25,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Enjoy wildlife safaris at Kanha National Park and the breathtaking cascade of Dhuwadhar Falls.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="trailtour.html"> <img class="card-img-top"
+                                     src="images/tea_garden.png" alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				    <div class="container">
+				      <h4 class="card-title" style="float:right"><a>4 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Coorg-Banglore</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><i class="fas fa-star-half amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.5 (424)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 30,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Visit the unique 'Dubare Elephant Camp' at Coorg, the famous monastry and explore city of Banglore.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="blog.html"> <img class="card-img-top"
+                                     src="images/udaipur.jpg" alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				    <div class="container">
+				      <h4 class="card-title" style="float:right"><a>6 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Udaipur-Jaipur</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.9 (450)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 40,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Witness the Hawa Mahal ,explore the Kumbhalgarh Fort ,the  City Palace of Udaipur and Jantar Mantar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <a href="trailtour.html"> <img class="card-img-top"
+                                     src="images/jaiselmer.png" alt="Card image cap"> </a>
+                                <div class="card-body">
+                                    <!-- Title -->
+    				     <div class="container">
+				      <h4 class="card-title" style="float:right"><a>5 Days</a></h4>
+    				      <h4 class="card-title font-weight-bold"><a>Jodhpur-Jaiselmer</a></h4>
+				    </div>
+    				    <!-- Data -->
+    				     <ul class="list-unstyled list-inline rating mb-0">	
+					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"> </i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item mr-0"><i class="fas fa-star amber-text"></i></li>
+      					<li class="list-inline-item"><i class="fas fa-star-half amber-text"></i></li>
+      					<li class="list-inline-item"><p class="text-muted">4.7 (443)</p></li>
+    				     </ul>
+    				     <h5 class="mb-2"><i class="fas fa-rupee-sign"></i> • 35,000 /-</h5>
+    				<!-- Text -->
+    				<p class="card-text">Visit the magnificent 'Mehrangarh Fort' in Jodhpur and the luxurious & opulent 'Umaid Bhawan Palace'.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+
+<!-------------------------------------- Cards slider ----------------------------------------->
+
+
+
+<!----------------------------------------Why Traventure?-----------------------------------------!>
+
+<div class="container">
+<section class="text-center my-5">
+
+  <h2 class="h1-responsive font-weight-bold my-5">Why choose Traventure?</h2>
+  <p class="lead grey-text w-responsive mx-auto mb-5">We at Traventure are a group of passionate & committed individuals who are relentlessly contributing towards discovering innovative ways of making your holidays a cheerful and beautiful experience for you..</p>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <i class="far fa-check-circle fa-5x"></i>
+      <h5 class="font-weight-bold my-4">Affordable Journeys</h5>
+      <p class="grey-text mb-md-0 mb-5">We strive to make the world accessible for each and every one!
+      </p>
+    </div>
+    
+
+    <div class="col-md-4">
+      <i class="far fa-compass fa-5x"></i>
+      <h5 class="font-weight-bold my-4">Guided Experiences</h5>
+      <p class="grey-text mb-md-0 mb-5">Hassle free journeys with the expertise of our in-house Tour Managers.
+      </p>
+    </div>
+
+    
+    <div class="col-md-4">
+      <i class="fas fa-suitcase fa-5x"></i>
+      <h5 class="font-weight-bold my-4">All Inclusive</h5>
+      <p class="grey-text mb-0">Comfortable stay & transport, delicious meals and abundant sightseeing on every tour.
+      </p>
+    </div>
+   
+  </div>
+
+</section>
+</div>
+
+<!----------------------------------------Why Traventure?-----------------------------------------!>
+
+
+
+
+<!-------------------------------------- Exclusive Deals ----------------------------------------->
+
+<div class="container">
+<h1 class="h1-responsive font-weight-bold my-5" style="text-align:center">Exclusive Deals </h1>
+
+<div class="row">
+  
+  <div class="col-lg-4 col-md-12 mb-3">
+  <div class="zoom">
+    <a href="trailtour.html"> <img src="images/sea-arch.png" class="img-fluid z-depth-1"
+      alt="Responsive image"> </a>
+  </div>
+	<div class="text-block"> 
+    		<h6>Starts from Rs. 2,50,000/-</h6>
+  	</div>
+	<div class="content-small">
+		<h2> Portugal </h2>
+		<h6> Departure date 5th August -15days</h6>
+	</div>
+  </div>
+  
+  
+  <div class="col-lg-4 col-md-6 mb-3">
+  <div class="zoom">
+    <a href="trailtour.html"> <img src="images/arizona.png" class="img-fluid z-depth-1"
+      alt="Responsive image"> </a>
+  </div>
+	<div class="text-block"> 
+    		<h6>Starts from Rs. 2,00,000/-</h6>
+  	</div>
+	<div class="content-small">
+		<h2> US West Coast </h2>
+		<h6> Departure date 5th August -20days</h6>
+	</div>
+  </div>
+ 
+  
+  <div class="col-lg-4 col-md-6 mb-3">
+  <div class="zoom">
+    <a href="blog.html"> <img src="images/collessum.png" class="img-fluid "
+      alt="Responsive image"> </a>
+  </div>
+	<div class="text-block"> 
+    		<h6>Starts from Rs. 1,00,000/-</h6>
+  	</div>
+	<div class="content-small">
+		<h2> Italian delight </h2>
+		<h6> Departure date 5th August -10days</h6>
+	</div>
+  </div>
+
+</div>
+
+
+
+
+<div class="row">
+ 
+  <div class="deals col-md-6 mb-3">
+  <div class="zoom">
+    <a href="trailtour.html"> <img src="images/iceland.png" class="img-fluid z-depth-1"
+      alt="Responsive image"> </a>
+  </div>
+	<div class="text-block"> 
+    		<h5>Starts from Rs. 1,50,000/-</h5>
+  	</div>
+	<div class="content">
+		<h2>Best of Iceland </h2>
+		<h6> Departure date 5th August -20days</h6>
+	</div>
+  </div>
+ 
+
+
+  <div class="deals col-md-6 mb-3">
+  <div class="zoom">
+    <a href="blog.html"> <img src="images/greece.png" class="img-fluid z-depth-1"
+      alt="Responsive image"> </a>
+  </div>
+	<div class="text-block"> 
+    		<h5>Starts from Rs. 2,50,000/-</h5>
+  	</div>
+	<div class="content">
+		<h2> Greek Islands </h2>
+		<h6> Departure date 5th August -15days</h6>
+	</div>
+  </div>
+
+</div>
+
+</div>
+
+<!-------------------------------------- Exclusive Deals ----------------------------------------->
+
+
+<!-------------------------------------- Jumbotron ----------------------------------------->
+
+
+<div class="jumbotron card card-image" style="background-image: url(images/lights.png); background-repeat:no-repeat; background-size:cover; margin-top:80px;">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h1 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Wonders of Europe</strong></h1>
+      <h4 class="mx-5 mb-5">Europe is always a great idea! Plan a fun-filled holiday with a touch of history, culture and of course, snow-white landscapes with our range of tours to Europe..!!
+      </h4>
+      <a class="feature btn btn-danger btn-lg" href="all_tours.php" role="button">View more</a>
+    </div>
+  </div>
+</div>
+
+<!-------------------------------------- Jumbotron ----------------------------------------->
+
+
+
+
+<!-------------------------------------- Exotic Holidays ----------------------------------------->
+<div class="container">
+<h1 class="h1-responsive font-weight-bold my-5" style="text-align:center;">Exotic Holidays </h1>
+
+<div class="row">
+  <!-- Grid column 1 -->
+  <div class="col-lg-4 col-md-12 mb-3">
+     <div class="hovereffect">
+    	 <img src="images/las_vegas.png" class="img-fluid z-depth-1" alt="Responsive image">
+	<div class="overlay">
+		<h2> Las Vegas </h2>
+		<a href="trailtour.html"><p class="info">Explore the beauty of Switzerland and visit Interlaken and explore Top of Europe – 'Jungfraujoch'.</p></a>
+	</div>
+     </div>
+  </div>
+  
+  
+<!-- Grid column 2-->
+  <div class="col-lg-4 col-md-12 mb-3">
+     <div class="hovereffect">
+    	<img src="images/spain.png" class="img-fluid z-depth-1" alt="Responsive image">
+	<div class="overlay">
+		<h2> Spain </h2>
+		<a href="trailtour.html"><p class="info">Explore the beauty of Switzerland and visit Interlaken and explore Top of Europe – 'Jungfraujoch'.</p></a>
+	</div>
+     </div>
+  </div>
+  
+
+  
+<!-- Grid column 3-->
+  <div class="col-lg-4 col-md-12 mb-3">
+     <div class="hovereffect">
+     <img src="images/singapore.png" class="img-fluid z-depth-1" alt="Responsive image">
+	<div class="overlay">
+		<h2> Singapore </h2>
+		<a href="trailtour.html"><p class="info">Explore the beauty of Switzerland and visit Interlaken and explore Top of Europe – 'Jungfraujoch'.</p></a>
+	</div>
+     </div>
+  </div>
+  
+</div>
+
+
+
+
+<div class="row">
+  <!-- Grid column 4 -->
+  <div class="col-lg-4 col-md-12 mb-3">
+     <div class="hovereffect">
+    	 <img src="images/germany.png" class="img-fluid z-depth-1" alt="Responsive image"> 
+	<div class="overlay">
+		<h2> Germany </h2>
+		<a href="trailtour.html"><p class="info">Explore the beauty of Switzerland and visit Interlaken and explore Top of Europe – 'Jungfraujoch'.</p></a>
+	</div>
+     </div>
+  </div>
+  
+  
+<!-- Grid column 5-->
+  <div class="col-lg-4 col-md-12 mb-3">
+     <div class="hovereffect">
+    	<img src="images/switzerland.png" class="img-fluid z-depth-1" alt="Responsive image">
+	<div class="overlay">
+		<h2> Switzerland </h2>
+		<a href="trailtour.html"><p class="info">Explore the beauty of Switzerland and visit Interlaken and explore Top of Europe – 'Jungfraujoch'.</p></a>
+	</div>
+     </div>
+  </div>
+
+
+  
+<!-- Grid column 6-->
+  <div class="col-lg-4 col-md-12 mb-3">
+     <div class="hovereffect">
+    	<img src="images/flowers.png" class="img-fluid z-depth-1" alt="Responsive image">
+	<div class="overlay">
+		<h2> Netherlands </h2>
+		<a href="trailtour.html"><p class="info">Explore the beauty of Switzerland and visit Interlaken and explore Top of Europe – 'Jungfraujoch'.</p></a>
+	</div>
+     </div>
+  </div>
+
+</div>
+
+</div>
+
+<!--------------------------------------- Exotic Holidays ------------------------------>
+
+
+<!--------------------------------------- Section: moving  ------------------------------>
+
+<div class="container-fluid">
+<div class="cont_principal">
+<div class="cont_central">
+  <div class="cont_modal cont_modal_active">
+  <div class="cont_photo">
+<div class="cont_img_back">
+    <img src="images/forest.jpg" alt="" />
+    </div>
+<div class="cont_mins">
+    <div class="sub_mins">
+  <h3>15</h3>
+<span>DAYS</span>
+  </div>
+  <div class="cont_icon_right">
+<a href="#">  <i class="material-icons">&#xE8E7;</i></a>
+  </div>
+    </div>
+<div class="cont_servings">
+      <h3>4</h3>
+<span>COUNTRIES</span>
+    </div>
+<div class="cont_detalles">
+    <h3>Wonders of Europe</h3>
+<p>USA - the land of glorious history, amazing possibilities and world's greatest cities! Hop on board a magical tour with us to the West Coast of this country. </p>
+    </div>
+    </div>
+<div class="cont_text_ingredients">
+<div class="cont_over_hidden">
+ 
+  <div class="cont_tabs">
+  <ul>
+    <li><a href="#"><h5>OVERVIEW</h5></a></li>
+    <li><a href="#"><h5>ITINERARY</h5></a></li>
+  </ul>  
+  </div>
+   
+  <div class="cont_text_det_preparation">
+  <div class="cont_title_preparation">
+    <p>DAY 1</p>
+    </div>
+  <div class="cont_info_preparation">
+    <p>Arrive in Dublin and you are transferred to your hotel where you have some free time to relax or to take a leisurely walk in Dublin. Overnight in Dublin.</p>
+    </div>  
+  <div class="cont_text_det_preparation">
+
+  <div class="cont_title_preparation">
+    <p>DAY 2</p>
+    </div>
+  <div class="cont_info_preparation">
+    <p>Post an Irish breakfast at the hotel and armed with your Hop-On Hop Off bus tickets, you set off on a tour of Dublin.  Stops along the tour route include: Trinity College, the Guinness Storehouse.</p>
+    </div> 
+  
+  </div>
+</div>  
+  <div class="cont_btn_mas_dets">
+  <a href="aboutus.html"><i class="fas fa-angle-down"></i></a>
+  </div>
+    
+  </div>
+  <div class="cont_btn_open_dets">
+  <a href="#e" onclick="open_close()"><i class="fas fa-angle-left fa-2x"></i></a>
+  </div>
+
+    </div>
+   </div>
+</div>
+</div>
+
+<!--------------------------------------- Section: moving  ------------------------------>
+
+
+
+
+<!--------------------------------------- Section: Testimonials  ------------------------------>
+
+<div class="container">
+<section class="team-section text-center my-5">
+
+  <!-- Section heading -->
+  <h1 class="h1-responsive font-weight-bold my-5">Traventure Stories </h1>
+
+  <!--Grid row-->
+  <div class="row text-center">
+
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-5">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="images/icon_1.png" class="rounded-circle  img-fluid">
+        </div>
+        <!--Content-->
+        <h4 class="font-weight-bold dark-grey-text mt-4">Rajat Reddy</h4>
+	<h6 class="font-weight-bold blue-text my-3">Mumbai</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>We travelled with Mango Holidays to Europe in 2011 & we had such a great experience that we travelled to USA also in 2012. We had a fabulous tour. We look forward to many more tours with you!.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star-half"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4 mb-md-0 mb-5">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="images/icon_2.png" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h4 class="font-weight-bold dark-grey-text mt-4">Veena Rathod</h4>
+	<h6 class="font-weight-bold blue-text my-3">Delhi</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>Our Europe Tour was truly a dream come true.Traventure put in every effort to make our tour a cherished experience. We tell all our relatives and friends that if they are travelling to Europe, they must travel ONLY with Mango Holidays.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+
+      <div class="testimonial">
+        <!--Avatar-->
+        <div class="avatar mx-auto">
+          <img src="images/icon_3.png" class="rounded-circle z-depth-1 img-fluid">
+        </div>
+        <!--Content-->
+        <h4 class="font-weight-bold dark-grey-text mt-4">Vikas Sharma</h4>
+        <h6 class="font-weight-bold blue-text my-3">Mumbai</h6>
+        <p class="font-weight-normal dark-grey-text">
+          <i class="fas fa-quote-left pr-2"></i>We would like to thank you very much for the fun and memorable Glimpses of Europe trip. I would like to thank you very much for all the efforts you have done, for the wonderful, streamlined tour we recently experienced with your organization.</p>
+        <!--Review-->
+        <div class="orange-text">
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="fas fa-star"> </i>
+          <i class="far fa-star"> </i>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</section>
+</div>
+
+<!--------------------------------------- Section: Testimonials  ------------------------------>
+
+
+
+<!-------------------------------------------- Footer -------------------------------------------->
+
+
+<footer class="footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Traventure</h5>
+	<hr class="light">
+        <p>Building a legacy of redefining travel, inspiring to explore and sharing reasons to celebrate life!</p>
+	<p> We believe in celebrating life and that is what makes us the absolute best..</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">     
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+	<hr class="light">
+            <p>How to Book</p>
+            <p>Enquiry</p>
+            <p>Feedback</p>
+            <p>FAQ</p> 
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resources</h5>
+	<hr class="light">
+            <p>Terms & Conditions</p>
+            <p>Privacy</p>
+            <p>Site Map</p>
+            <p>Travel Deals</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+	<hr class="light">
+            <p><i class="fas fa-home mr-3"></i> Mumbai, India</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>    
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr class="light">
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item icons">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f fa-2x"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item icons">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter fa-2x"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item icons">
+      <a class="btn-floating btn-pint mx-1">
+        <i class="fab fa-pinterest fa-2x"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item icons">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-instagram fa-2x"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item icons">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-youtube fa-2x"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright: travel@traventure.com
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!----------------------------------------- Footer ---------------------------------------------->
+
+
+
+
+</body>
+</html>

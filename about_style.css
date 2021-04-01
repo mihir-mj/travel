@@ -1,0 +1,37 @@
+.bg {
+  	background-image: url("images/aboutus.png");
+  	height: 300px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	margin-bottom:80px;
+	opacity:0.9;
+	}
+
+	.bg h2{
+	color:white;
+	text-align:center;
+	transform:translatey(300%);
+	font-weight:600;
+	font-size:300%;
+	text-shadow: 1px 1px 15px #000;
+	}
+
+	.navbar-brand img{
+	height:30px;
+	padding-right:300px;
+	}
+	.navbar{
+	padding:10px;
+	}
+	.navbar-nav li{
+	padding-right:15px;
+	font-weight:bold;
+	font-size:16px;
+	}
+	.nav-link .navbar-light .navbar-nav{
+	color:blue;
+	} 
+	.nav-link .navbar-light .navbar-nav:hover{
+	color:pink;
+	}

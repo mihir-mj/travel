@@ -1,0 +1,124 @@
+.card-body{
+	transform:translateY(-80%);
+	background-color:white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left:100px;
+	margin-right:100px;
+	}
+
+	.name h1{
+	transform:translatey(-580%);
+	color:white;
+	text-align:center;
+	font-weight:700;
+	text-shadow: 2px 2px 15px #000;
+	margin-left:50px;
+	margin-
+	}
+
+	.social-counters{
+	color:white
+	}
+	.social-counters .btn{
+	background-color:#ff0055;
+	padding-left:25px;
+	padding-right:25px;
+	margin:15px;
+	}
+	.social-counters .btn:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+	}
+	.title{
+	color:#ff0055;
+	}
+	
+	.read{
+	background:#ff0055;
+	border:none;
+	}
+	.read:hover{
+	background:#ff0055;
+	border:none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+	}
+
+
+@body: #252830;
+@whiteSmoke: #f4f4f4;
+
+.container-fluid {
+	.center;
+	width: 100%;
+	height:100;
+}
+.blog-card {
+	background-color: @grey;
+	border-radius: 1px;
+	box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+	height: 300px;
+	margin: 0 auto;
+	max-width: 1000px;
+	overflow: hidden;
+}
+.card-body1 {
+	height: 100%;
+	padding: 30px 20px 50px;
+}
+.tagline {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.title1 {
+	color: @body;
+	font-size: 30px;
+	font-weight: 400;
+}
+.divider {
+	background: grey;
+	height: 2px;
+	margin: 25px auto;
+	width: 40px;
+}
+
+.paragraph {
+	font-weight: 300;
+}
+.read-more {
+	bottom: 10px;
+	color: red;
+	cursor: pointer;
+	left: 50%;
+	padding: 5px;
+	position: absolute;
+	text-decoration: none;
+	top: auto;
+	transform: translateX(-50%);
+	
+	&:hover,
+	&:focus,
+	&:visited {
+		color: @body;
+		text-decoration: none;
+	}
+}
+}
+
+	.navbar-brand img{
+	height:30px;
+	padding-right:300px;
+	}
+	.navbar{
+	padding:10px;
+	}
+	.navbar-nav li{
+	padding-right:15px;
+	font-weight:bold;
+	font-size:16px;
+	}
+	.nav-link .navbar-light .navbar-nav{
+	color:blue;
+	} 
+	.nav-link .navbar-light .navbar-nav:hover{
+	color:pink;
+	}

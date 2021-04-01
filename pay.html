@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<title> Contact </title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="pay_style.css">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/jquery-ui.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<main id="main">
+	<section id="left">
+		<div id="head">
+			<h1>Life has great moments</h1>
+			<p>Enjoy them by celebrating and creating memories of them by travelling with us!</p>
+		</div>
+	</section>
+	<section id="right">
+		<h1 style="align:center">Payment</h1>
+		<form class="needs-validation" onsubmit="return validation()" action="payment.php" method="post">
+			<div id="form-card" class="form-field">
+				<label for="cc-number">Card number:</label>
+				<input id="cc-number" maxlength="19" placeholder="1111 2222 3333 4444" required name="cc_no">
+			</div>
+
+			<div id="form-date" class="form-field">
+				<label for="expiry-month">Expiry date:</label>
+				<div id="date-val">
+					<select id="expiry-month" required name="month">										<option id="translabel_month" value="" default="default" selected="selected">Month</option>
+														
+					<option value="1">01</option>
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+					<option value="9">09</option>													<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					</select>
+
+					<select id="expiry-year" required name="year">
+					<option id="trans-label_year" value="" default="" selected="selected">Year</option>
+					<option value="2019">19</option>
+					<option value="2020">20</option>
+					<option value="2021">21</option>
+					<option value="2022">22</option>
+					<option value="2023">23</option>
+					<option value="2024">24</option>
+					<option value="2025">25</option>
+					</select>
+				</div>
+			</div>
+			
+			<div id="form-sec-code" class="form-field">
+				<label for="sec-code">Security code:</label>
+				<input type="password" maxlength="3" placeholder="123" required name="code">
+			</div>
+			
+			<button class="btn btn-danger btn-lg btn-block" type="submit" >CONFIRM</button>
+		</form>
+	</section>
+</main> 
+
+
+
+</body>
+</html>
